@@ -34,6 +34,12 @@ function addItem(){
         deleteItem(li);
     }
 
+    li.appendChild(editButton);
+    li.appendChild(deleteButton);
+
+    shoppingList.appendChild(li);
+
+    itemInput.value= ""
 
 
 }
