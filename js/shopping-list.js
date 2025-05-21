@@ -41,5 +41,16 @@ function addItem(){
 
     itemInput.value= ""
 
+}
+
+
+function editItem(item){
+
+    let itemTextElement= item.firstChild;
+    let itemText= itemTextElement.textContent;
+
+    let newItemText = prompt("Modifier l'article : ".itemText);
+    
+
 
 }
