@@ -29,7 +29,7 @@ function addItem(){
 
     deleteButton.innerHTML= '<ion-icon name="trash-outline"></ion-icon>';
 
-    deleteButton.oneclick= function(){
+    deleteButton.onclick= function(){
 
         deleteItem(li);
     }
@@ -49,7 +49,7 @@ function editItem(item){
     let itemTextElement= item.firstChild;
     let itemText= itemTextElement.textContent;
 
-    let newItemText = prompt("Modifier l'article : ".itemText);
+    let newItemText = prompt("Modifier l'article :", itemText);
 
     if(newItemText === null || newItemText=== ""){
 
@@ -57,4 +57,10 @@ function editItem(item){
     }
 
     itemTextElement.textContent= newItemText;
+}
+
+
+function deleteItem(item){
+
+    shoppingList.removeChild(item);
 }
