@@ -18,7 +18,7 @@ function addItem(){
 
     let editButton= document.createElement('button');
 
-    editButton.innerHTML= '<ion-icon name="pencil-outline"></ion-icon>';
+    editButton.innerHTML= '<ion-icon name="pencil-outline" class="modify"></ion-icon>';
 
     editButton.onclick = function(){
         editItem(li);
@@ -27,7 +27,7 @@ function addItem(){
 
     let deleteButton= document.createElement('button');
 
-    deleteButton.innerHTML= '<ion-icon name="trash-outline"></ion-icon>';
+    deleteButton.innerHTML= '<ion-icon name="trash-outline" class="delete"></ion-icon>';
 
     deleteButton.onclick= function(){
 
