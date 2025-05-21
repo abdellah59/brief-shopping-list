@@ -16,11 +16,11 @@ function addItem(){
     let li = document.createElement('li');
     li.innerHTML = itemText;
 
-    let editButton= document.createAttribute('button');
+    let editButton= document.createElement('button');
 
     editButton.innerHTML= '<ion-icon name="pencil-outline"></ion-icon>';
 
-    editButtononclicl = function(){
+    editButton.onclick = function(){
         editItem(li);
     }
 
@@ -50,7 +50,11 @@ function editItem(item){
     let itemText= itemTextElement.textContent;
 
     let newItemText = prompt("Modifier l'article : ".itemText);
-    
 
+    if(newItemText === null || newItemText=== ""){
 
+        return;
+    }
+
+    itemTextElement.textContent= newItemText;
 }
