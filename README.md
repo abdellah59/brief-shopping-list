@@ -13,7 +13,7 @@ Il s'agit une page web qui permet de créer et gérer une liste de courses. L'ut
 
 ### En ligne : 
 
-Voici le lien : [Page Carousel](https://abdellah59.github.io/brief-shopping-list/)
+Voici le lien : [Page Ma Liste de Courses](https://abdellah59.github.io/brief-shopping-list/)
 
 ### En local : 
 
